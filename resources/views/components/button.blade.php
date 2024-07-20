@@ -1,1 +1,1 @@
-<button @class([$attributes['class']])>{{ $slot }}</button>
+<button {{ $attributes }}>{{ $slot }}</button>

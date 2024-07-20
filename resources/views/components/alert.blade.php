@@ -1,15 +1,19 @@
 <div
   x-data="{
-    open: true
+    open: true,
+    toggle() { 
+      console.log('Toggle');
+      this.open = !this.open
+    }
   }"
 >
-  <div>Jora jora: {{ $iconPosition }}</div>
   <div 
     @class([
       Arr::toCssClasses($classArray),
-      'relative flex',
+      'relative flex transition',
       'flex-row-reverse' => $dismissable && strpos($iconClass, 'left') !== false
     ])
+    x-show='open'
     role="alert"
   >
     <div class="basis-full">{{ $slot }}</div>
@@ -19,16 +23,15 @@
     @if ($dismissable)
       <div class="absolute inset-0">
         <x-button 
+          x-on:click="toggle()"
           @class([
-            "p-2 absolute transition-all my-auto",
+            "p-1 absolute transition-all my-auto opacity-70 hover:opacity-100",
             $iconClass
           ])
         >
-          {!! str_replace('%%class%%', 'size-6', config('components.icons.close'))!!}
+          {!! str_replace('%%class%%', 'size-8', config('components.icons.close'))!!}
         </x-button>
       </div>
     @endif
   </div>
-</div>
-
 </div>

@@ -2,7 +2,7 @@
 
 return [
     'icons' => [
-        'close' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="%%class%%"><path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>',
+        'close' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="%%class%%"><path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z" clip-rule="evenodd" /></svg>',
     ],
     'button' => [
         'variants' => [
@@ -45,7 +45,7 @@ return [
             'warning' => 'border text-amber-800 border-amber-800 bg-amber-300',
             'danger' => 'border text-red-800 border-red-800 bg-red-300',
             'light' => 'border text-gray-500 border-gray-500 bg-gray-200',
-            'dark' => 'border text-gray-800 border-gray-800 bg-gray-500',
+            'dark' => 'border text-gray-200 border-gray-800 bg-gray-500',
         ],
         'padding' => [
             'x' => 'px-4',
